@@ -3,7 +3,7 @@ App Description: calculator iOS application
 
 Project type: Pet
 
-Tech Stack: API, UIKit, AutoLayout, SwiftLint, Builder, YARCH, R.swift, NSRegularExpression, work with String
+Tech Stack: API, UIKit, AutoLayout, SwiftLint, Builder, YARCH, R.swift, NSRegularExpression, work with String, and keyboard
 
 #Author(-s)
 Developed by: Postnikov Petr
