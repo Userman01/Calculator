@@ -1,0 +1,14 @@
+/* 
+  Localizable.strings
+  Calculator
+
+  Created by Петр Постников on 12.02.2023.
+  
+*/
+
+// MARK: Calculator
+"calculator.title" = "Калькулятор";
+"calculator.title-button" = "Готово";
+"calculator.error-impossible-to-count" = "Невозможно посчитать";
+"calculator.error-decimal-count" = "Превышение кол-во чисел после запятой";
+"calculator.error-a-negative-number" = "Отрицательное число";

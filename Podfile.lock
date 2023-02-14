@@ -1,0 +1,24 @@
+PODS:
+  - InputMask (6.1.0)
+  - R.swift (6.1.0):
+    - R.swift.Library (~> 5.3.0)
+  - R.swift.Library (5.3.0)
+
+DEPENDENCIES:
+  - InputMask (= 6.1.0)
+  - R.swift (= 6.1.0)
+
+SPEC REPOS:
+  trunk:
+    - InputMask
+    - R.swift
+    - R.swift.Library
+
+SPEC CHECKSUMS:
+  InputMask: 71d291dc54d2deaeac6512afb6ec2304228c0bb7
+  R.swift: ec98ff71c4ab2f6fd01dd077e5afd15e63a4834c
+  R.swift.Library: 0fc583cb55a99e28901299cc451614cad1161962
+
+PODFILE CHECKSUM: b12f050897c8eb0cff3c744672f6d49de5c40538
+
+COCOAPODS: 1.11.3

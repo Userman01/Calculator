@@ -1,0 +1,657 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6E201DF1CA64E47A65DDB0E4 /* Pods_Calculator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B7E77D6FDC2DA142180C398 /* Pods_Calculator.framework */; };
+		C95A592E2999209700C4B0AE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C95A592D2999209700C4B0AE /* AppDelegate.swift */; };
+		C95A59302999209700C4B0AE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C95A592F2999209700C4B0AE /* SceneDelegate.swift */; };
+		C95A59322999209700C4B0AE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C95A59312999209700C4B0AE /* ViewController.swift */; };
+		C95A593A2999209800C4B0AE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C95A59382999209800C4B0AE /* LaunchScreen.storyboard */; };
+		C95A59492999275700C4B0AE /* ToFloatingPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = C95A59422999275700C4B0AE /* ToFloatingPoint.swift */; };
+		C95A594A2999275700C4B0AE /* CalculatorFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C95A59432999275700C4B0AE /* CalculatorFormatter.swift */; };
+		C95A594B2999275700C4B0AE /* TextFieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C95A59442999275700C4B0AE /* TextFieldView.swift */; };
+		C95A594C2999275700C4B0AE /* CalculatorTextFieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C95A59452999275700C4B0AE /* CalculatorTextFieldView.swift */; };
+		C95A594D2999275700C4B0AE /* ActionButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = C95A59462999275700C4B0AE /* ActionButton.swift */; };
+		C95A594E2999275700C4B0AE /* DarkTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = C95A59472999275700C4B0AE /* DarkTheme.swift */; };
+		C95A594F2999275700C4B0AE /* CalculatorValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C95A59482999275700C4B0AE /* CalculatorValidator.swift */; };
+		C95A59652999276300C4B0AE /* CalculatorViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C95A59532999276300C4B0AE /* CalculatorViewModel.swift */; };
+		C95A59662999276300C4B0AE /* CalculatorPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C95A59542999276300C4B0AE /* CalculatorPresenter.swift */; };
+		C95A59672999276300C4B0AE /* CalculatorWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = C95A59552999276300C4B0AE /* CalculatorWorker.swift */; };
+		C95A59682999276300C4B0AE /* CalculatorDataFlow.swift in Sources */ = {isa = PBXBuildFile; fileRef = C95A59562999276300C4B0AE /* CalculatorDataFlow.swift */; };
+		C95A59692999276300C4B0AE /* CalculatorInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C95A59572999276300C4B0AE /* CalculatorInteractor.swift */; };
+		C95A596A2999276300C4B0AE /* CalculatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C95A59582999276300C4B0AE /* CalculatorViewController.swift */; };
+		C95A596B2999276300C4B0AE /* CalculatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C95A595A2999276300C4B0AE /* CalculatorView.swift */; };
+		C95A596C2999276300C4B0AE /* CalculatorBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = C95A595B2999276300C4B0AE /* CalculatorBuilder.swift */; };
+		C95A596D2999276300C4B0AE /* CalculatorTransitionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C95A595D2999276300C4B0AE /* CalculatorTransitionDelegate.swift */; };
+		C95A596E2999276300C4B0AE /* CalculatorPresentationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C95A595E2999276300C4B0AE /* CalculatorPresentationController.swift */; };
+		C95A596F2999276300C4B0AE /* CalculatorDimmPresentationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C95A595F2999276300C4B0AE /* CalculatorDimmPresentationController.swift */; };
+		C95A59702999276300C4B0AE /* CalculatorKeyboardCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C95A59612999276300C4B0AE /* CalculatorKeyboardCell.swift */; };
+		C95A59712999276300C4B0AE /* CalculatorKeyboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C95A59622999276300C4B0AE /* CalculatorKeyboardView.swift */; };
+		C95A59722999276300C4B0AE /* CalculatorKeyboardDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = C95A59632999276300C4B0AE /* CalculatorKeyboardDataSource.swift */; };
+		C95A59732999276300C4B0AE /* CalculatorKeyboardWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = C95A59642999276300C4B0AE /* CalculatorKeyboardWorker.swift */; };
+		C95A5975299929AA00C4B0AE /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C95A5974299929AA00C4B0AE /* Colors.xcassets */; };
+		C95A597829992A6200C4B0AE /* TextStyles.swift in Sources */ = {isa = PBXBuildFile; fileRef = C95A597729992A6200C4B0AE /* TextStyles.swift */; };
+		C95A597A29992CCB00C4B0AE /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = C95A597929992CCB00C4B0AE /* R.generated.swift */; };
+		C95A597C29992D2100C4B0AE /* Spacing.swift in Sources */ = {isa = PBXBuildFile; fileRef = C95A597B29992D2100C4B0AE /* Spacing.swift */; };
+		C95A598029993B1600C4B0AE /* CalculatorFormatterExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C95A597F29993B1600C4B0AE /* CalculatorFormatterExtension.swift */; };
+		C95A598229993BC600C4B0AE /* ValidatorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C95A598129993BC600C4B0AE /* ValidatorProtocol.swift */; };
+		C95A598429993BCD00C4B0AE /* InsetLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C95A598329993BCD00C4B0AE /* InsetLabel.swift */; };
+		C95A598629993CAB00C4B0AE /* ValidatorError.swift in Sources */ = {isa = PBXBuildFile; fileRef = C95A598529993CAB00C4B0AE /* ValidatorError.swift */; };
+		C95A598829993CB000C4B0AE /* TextFieldValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C95A598729993CB000C4B0AE /* TextFieldValidator.swift */; };
+		C95A598A29993CE900C4B0AE /* AmountFormatterExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C95A598929993CE900C4B0AE /* AmountFormatterExtension.swift */; };
+		C95A598C29993D9200C4B0AE /* SeparatedMathExpression.swift in Sources */ = {isa = PBXBuildFile; fileRef = C95A598B29993D9200C4B0AE /* SeparatedMathExpression.swift */; };
+		C95A598E29993E9A00C4B0AE /* Array.swift in Sources */ = {isa = PBXBuildFile; fileRef = C95A598D29993E9A00C4B0AE /* Array.swift */; };
+		C95A599029993F0800C4B0AE /* UICollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C95A598F29993F0800C4B0AE /* UICollectionView.swift */; };
+		C95A599229993F4B00C4B0AE /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = C95A599129993F4B00C4B0AE /* Localizable.strings */; };
+		C95A599429993FFA00C4B0AE /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C95A599329993FFA00C4B0AE /* Images.xcassets */; };
+		C95A5996299B7E1200C4B0AE /* TextFieldViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C95A5995299B7E1200C4B0AE /* TextFieldViewModel.swift */; };
+		C95A5998299B7F0C00C4B0AE /* DirectionalLayoutMargins.swift in Sources */ = {isa = PBXBuildFile; fileRef = C95A5997299B7F0C00C4B0AE /* DirectionalLayoutMargins.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		55DAE9E6B24E33BED527E631 /* Pods-Calculator.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Calculator.debug.xcconfig"; path = "Target Support Files/Pods-Calculator/Pods-Calculator.debug.xcconfig"; sourceTree = "<group>"; };
+		5BEF9B72849A5FEEE0F38616 /* Pods-Calculator.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Calculator.release.xcconfig"; path = "Target Support Files/Pods-Calculator/Pods-Calculator.release.xcconfig"; sourceTree = "<group>"; };
+		6B7E77D6FDC2DA142180C398 /* Pods_Calculator.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Calculator.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C95A592A2999209700C4B0AE /* Calculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Calculator.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C95A592D2999209700C4B0AE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C95A592F2999209700C4B0AE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		C95A59312999209700C4B0AE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C95A593B2999209800C4B0AE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C95A59422999275700C4B0AE /* ToFloatingPoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToFloatingPoint.swift; sourceTree = "<group>"; };
+		C95A59432999275700C4B0AE /* CalculatorFormatter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalculatorFormatter.swift; sourceTree = "<group>"; };
+		C95A59442999275700C4B0AE /* TextFieldView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextFieldView.swift; sourceTree = "<group>"; };
+		C95A59452999275700C4B0AE /* CalculatorTextFieldView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalculatorTextFieldView.swift; sourceTree = "<group>"; };
+		C95A59462999275700C4B0AE /* ActionButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActionButton.swift; sourceTree = "<group>"; };
+		C95A59472999275700C4B0AE /* DarkTheme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DarkTheme.swift; sourceTree = "<group>"; };
+		C95A59482999275700C4B0AE /* CalculatorValidator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalculatorValidator.swift; sourceTree = "<group>"; };
+		C95A59532999276300C4B0AE /* CalculatorViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalculatorViewModel.swift; sourceTree = "<group>"; };
+		C95A59542999276300C4B0AE /* CalculatorPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalculatorPresenter.swift; sourceTree = "<group>"; };
+		C95A59552999276300C4B0AE /* CalculatorWorker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalculatorWorker.swift; sourceTree = "<group>"; };
+		C95A59562999276300C4B0AE /* CalculatorDataFlow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalculatorDataFlow.swift; sourceTree = "<group>"; };
+		C95A59572999276300C4B0AE /* CalculatorInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalculatorInteractor.swift; sourceTree = "<group>"; };
+		C95A59582999276300C4B0AE /* CalculatorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalculatorViewController.swift; sourceTree = "<group>"; };
+		C95A595A2999276300C4B0AE /* CalculatorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalculatorView.swift; sourceTree = "<group>"; };
+		C95A595B2999276300C4B0AE /* CalculatorBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalculatorBuilder.swift; sourceTree = "<group>"; };
+		C95A595D2999276300C4B0AE /* CalculatorTransitionDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalculatorTransitionDelegate.swift; sourceTree = "<group>"; };
+		C95A595E2999276300C4B0AE /* CalculatorPresentationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalculatorPresentationController.swift; sourceTree = "<group>"; };
+		C95A595F2999276300C4B0AE /* CalculatorDimmPresentationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalculatorDimmPresentationController.swift; sourceTree = "<group>"; };
+		C95A59612999276300C4B0AE /* CalculatorKeyboardCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalculatorKeyboardCell.swift; sourceTree = "<group>"; };
+		C95A59622999276300C4B0AE /* CalculatorKeyboardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalculatorKeyboardView.swift; sourceTree = "<group>"; };
+		C95A59632999276300C4B0AE /* CalculatorKeyboardDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalculatorKeyboardDataSource.swift; sourceTree = "<group>"; };
+		C95A59642999276300C4B0AE /* CalculatorKeyboardWorker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalculatorKeyboardWorker.swift; sourceTree = "<group>"; };
+		C95A5974299929AA00C4B0AE /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
+		C95A597729992A6200C4B0AE /* TextStyles.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextStyles.swift; sourceTree = "<group>"; };
+		C95A597929992CCB00C4B0AE /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = SOURCE_ROOT; };
+		C95A597B29992D2100C4B0AE /* Spacing.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Spacing.swift; sourceTree = "<group>"; };
+		C95A597D299939FA00C4B0AE /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		C95A597E29993A0F00C4B0AE /* ru */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = ru; path = ru.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C95A597F29993B1600C4B0AE /* CalculatorFormatterExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalculatorFormatterExtension.swift; sourceTree = "<group>"; };
+		C95A598129993BC600C4B0AE /* ValidatorProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ValidatorProtocol.swift; sourceTree = "<group>"; };
+		C95A598329993BCD00C4B0AE /* InsetLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InsetLabel.swift; sourceTree = "<group>"; };
+		C95A598529993CAB00C4B0AE /* ValidatorError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ValidatorError.swift; sourceTree = "<group>"; };
+		C95A598729993CB000C4B0AE /* TextFieldValidator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextFieldValidator.swift; sourceTree = "<group>"; };
+		C95A598929993CE900C4B0AE /* AmountFormatterExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AmountFormatterExtension.swift; sourceTree = "<group>"; };
+		C95A598B29993D9200C4B0AE /* SeparatedMathExpression.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SeparatedMathExpression.swift; sourceTree = "<group>"; };
+		C95A598D29993E9A00C4B0AE /* Array.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Array.swift; sourceTree = "<group>"; };
+		C95A598F29993F0800C4B0AE /* UICollectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UICollectionView.swift; sourceTree = "<group>"; };
+		C95A599129993F4B00C4B0AE /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
+		C95A599329993FFA00C4B0AE /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		C95A5995299B7E1200C4B0AE /* TextFieldViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextFieldViewModel.swift; sourceTree = "<group>"; };
+		C95A5997299B7F0C00C4B0AE /* DirectionalLayoutMargins.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DirectionalLayoutMargins.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C95A59272999209700C4B0AE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6E201DF1CA64E47A65DDB0E4 /* Pods_Calculator.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		30E5A65312322C5F2B637BCB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6B7E77D6FDC2DA142180C398 /* Pods_Calculator.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3E11CA44830AF8D9997B0A4F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				55DAE9E6B24E33BED527E631 /* Pods-Calculator.debug.xcconfig */,
+				5BEF9B72849A5FEEE0F38616 /* Pods-Calculator.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		C95A59212999209700C4B0AE = {
+			isa = PBXGroup;
+			children = (
+				C95A592C2999209700C4B0AE /* Calculator */,
+				C95A592B2999209700C4B0AE /* Products */,
+				3E11CA44830AF8D9997B0A4F /* Pods */,
+				30E5A65312322C5F2B637BCB /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		C95A592B2999209700C4B0AE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C95A592A2999209700C4B0AE /* Calculator.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C95A592C2999209700C4B0AE /* Calculator */ = {
+			isa = PBXGroup;
+			children = (
+				C95A592D2999209700C4B0AE /* AppDelegate.swift */,
+				C95A592F2999209700C4B0AE /* SceneDelegate.swift */,
+				C95A59312999209700C4B0AE /* ViewController.swift */,
+				C95A59502999276300C4B0AE /* Calculator */,
+				C95A59412999275700C4B0AE /* Common */,
+				C95A597929992CCB00C4B0AE /* R.generated.swift */,
+				C95A5974299929AA00C4B0AE /* Colors.xcassets */,
+				C95A599329993FFA00C4B0AE /* Images.xcassets */,
+				C95A599129993F4B00C4B0AE /* Localizable.strings */,
+				C95A59382999209800C4B0AE /* LaunchScreen.storyboard */,
+				C95A593B2999209800C4B0AE /* Info.plist */,
+			);
+			path = Calculator;
+			sourceTree = "<group>";
+		};
+		C95A59412999275700C4B0AE /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				C95A5997299B7F0C00C4B0AE /* DirectionalLayoutMargins.swift */,
+				C95A59422999275700C4B0AE /* ToFloatingPoint.swift */,
+				C95A59432999275700C4B0AE /* CalculatorFormatter.swift */,
+				C95A598129993BC600C4B0AE /* ValidatorProtocol.swift */,
+				C95A597B29992D2100C4B0AE /* Spacing.swift */,
+				C95A598329993BCD00C4B0AE /* InsetLabel.swift */,
+				C95A597F29993B1600C4B0AE /* CalculatorFormatterExtension.swift */,
+				C95A597729992A6200C4B0AE /* TextStyles.swift */,
+				C95A598D29993E9A00C4B0AE /* Array.swift */,
+				C95A598B29993D9200C4B0AE /* SeparatedMathExpression.swift */,
+				C95A598F29993F0800C4B0AE /* UICollectionView.swift */,
+				C95A5995299B7E1200C4B0AE /* TextFieldViewModel.swift */,
+				C95A598729993CB000C4B0AE /* TextFieldValidator.swift */,
+				C95A598929993CE900C4B0AE /* AmountFormatterExtension.swift */,
+				C95A59442999275700C4B0AE /* TextFieldView.swift */,
+				C95A59452999275700C4B0AE /* CalculatorTextFieldView.swift */,
+				C95A598529993CAB00C4B0AE /* ValidatorError.swift */,
+				C95A59462999275700C4B0AE /* ActionButton.swift */,
+				C95A59472999275700C4B0AE /* DarkTheme.swift */,
+				C95A59482999275700C4B0AE /* CalculatorValidator.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		C95A59502999276300C4B0AE /* Calculator */ = {
+			isa = PBXGroup;
+			children = (
+				C95A59512999276300C4B0AE /* CalculatorBuilder */,
+				C95A595C2999276300C4B0AE /* Presentation */,
+				C95A59602999276300C4B0AE /* Keyboard */,
+			);
+			path = Calculator;
+			sourceTree = "<group>";
+		};
+		C95A59512999276300C4B0AE /* CalculatorBuilder */ = {
+			isa = PBXGroup;
+			children = (
+				C95A59522999276300C4B0AE /* ViewModel */,
+				C95A59542999276300C4B0AE /* CalculatorPresenter.swift */,
+				C95A59552999276300C4B0AE /* CalculatorWorker.swift */,
+				C95A59562999276300C4B0AE /* CalculatorDataFlow.swift */,
+				C95A59572999276300C4B0AE /* CalculatorInteractor.swift */,
+				C95A59582999276300C4B0AE /* CalculatorViewController.swift */,
+				C95A59592999276300C4B0AE /* View */,
+				C95A595B2999276300C4B0AE /* CalculatorBuilder.swift */,
+			);
+			path = CalculatorBuilder;
+			sourceTree = "<group>";
+		};
+		C95A59522999276300C4B0AE /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				C95A59532999276300C4B0AE /* CalculatorViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		C95A59592999276300C4B0AE /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C95A595A2999276300C4B0AE /* CalculatorView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		C95A595C2999276300C4B0AE /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				C95A595D2999276300C4B0AE /* CalculatorTransitionDelegate.swift */,
+				C95A595E2999276300C4B0AE /* CalculatorPresentationController.swift */,
+				C95A595F2999276300C4B0AE /* CalculatorDimmPresentationController.swift */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		C95A59602999276300C4B0AE /* Keyboard */ = {
+			isa = PBXGroup;
+			children = (
+				C95A59612999276300C4B0AE /* CalculatorKeyboardCell.swift */,
+				C95A59622999276300C4B0AE /* CalculatorKeyboardView.swift */,
+				C95A59632999276300C4B0AE /* CalculatorKeyboardDataSource.swift */,
+				C95A59642999276300C4B0AE /* CalculatorKeyboardWorker.swift */,
+			);
+			path = Keyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C95A59292999209700C4B0AE /* Calculator */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C95A593E2999209800C4B0AE /* Build configuration list for PBXNativeTarget "Calculator" */;
+			buildPhases = (
+				CF0A6A241AB19C2CE849C03C /* [CP] Check Pods Manifest.lock */,
+				C95A5976299929DF00C4B0AE /* Run Script R swift */,
+				C95A59262999209700C4B0AE /* Sources */,
+				C95A59272999209700C4B0AE /* Frameworks */,
+				C95A59282999209700C4B0AE /* Resources */,
+				508C65577754533207706044 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Calculator;
+			productName = Calculator;
+			productReference = C95A592A2999209700C4B0AE /* Calculator.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C95A59222999209700C4B0AE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1400;
+				LastUpgradeCheck = 1400;
+				TargetAttributes = {
+					C95A59292999209700C4B0AE = {
+						CreatedOnToolsVersion = 14.0.1;
+					};
+				};
+			};
+			buildConfigurationList = C95A59252999209700C4B0AE /* Build configuration list for PBXProject "Calculator" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				ru,
+				Base,
+			);
+			mainGroup = C95A59212999209700C4B0AE;
+			productRefGroup = C95A592B2999209700C4B0AE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C95A59292999209700C4B0AE /* Calculator */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C95A59282999209700C4B0AE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C95A5975299929AA00C4B0AE /* Colors.xcassets in Resources */,
+				C95A599429993FFA00C4B0AE /* Images.xcassets in Resources */,
+				C95A599229993F4B00C4B0AE /* Localizable.strings in Resources */,
+				C95A593A2999209800C4B0AE /* LaunchScreen.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		508C65577754533207706044 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Calculator/Pods-Calculator-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Calculator/Pods-Calculator-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Calculator/Pods-Calculator-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C95A5976299929DF00C4B0AE /* Run Script R swift */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Run Script R swift";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				$SRCROOT/R.generated.swift,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"$PODS_ROOT/R.swift/rswift\" generate \"$SRCROOT/R.generated.swift\"\n";
+		};
+		CF0A6A241AB19C2CE849C03C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Calculator-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C95A59262999209700C4B0AE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C95A596B2999276300C4B0AE /* CalculatorView.swift in Sources */,
+				C95A594C2999275700C4B0AE /* CalculatorTextFieldView.swift in Sources */,
+				C95A59732999276300C4B0AE /* CalculatorKeyboardWorker.swift in Sources */,
+				C95A59322999209700C4B0AE /* ViewController.swift in Sources */,
+				C95A596A2999276300C4B0AE /* CalculatorViewController.swift in Sources */,
+				C95A59492999275700C4B0AE /* ToFloatingPoint.swift in Sources */,
+				C95A598A29993CE900C4B0AE /* AmountFormatterExtension.swift in Sources */,
+				C95A59652999276300C4B0AE /* CalculatorViewModel.swift in Sources */,
+				C95A5996299B7E1200C4B0AE /* TextFieldViewModel.swift in Sources */,
+				C95A596F2999276300C4B0AE /* CalculatorDimmPresentationController.swift in Sources */,
+				C95A598E29993E9A00C4B0AE /* Array.swift in Sources */,
+				C95A5998299B7F0C00C4B0AE /* DirectionalLayoutMargins.swift in Sources */,
+				C95A594B2999275700C4B0AE /* TextFieldView.swift in Sources */,
+				C95A594E2999275700C4B0AE /* DarkTheme.swift in Sources */,
+				C95A598429993BCD00C4B0AE /* InsetLabel.swift in Sources */,
+				C95A59662999276300C4B0AE /* CalculatorPresenter.swift in Sources */,
+				C95A59682999276300C4B0AE /* CalculatorDataFlow.swift in Sources */,
+				C95A592E2999209700C4B0AE /* AppDelegate.swift in Sources */,
+				C95A59672999276300C4B0AE /* CalculatorWorker.swift in Sources */,
+				C95A596D2999276300C4B0AE /* CalculatorTransitionDelegate.swift in Sources */,
+				C95A594A2999275700C4B0AE /* CalculatorFormatter.swift in Sources */,
+				C95A59302999209700C4B0AE /* SceneDelegate.swift in Sources */,
+				C95A594F2999275700C4B0AE /* CalculatorValidator.swift in Sources */,
+				C95A59692999276300C4B0AE /* CalculatorInteractor.swift in Sources */,
+				C95A594D2999275700C4B0AE /* ActionButton.swift in Sources */,
+				C95A598C29993D9200C4B0AE /* SeparatedMathExpression.swift in Sources */,
+				C95A598229993BC600C4B0AE /* ValidatorProtocol.swift in Sources */,
+				C95A598829993CB000C4B0AE /* TextFieldValidator.swift in Sources */,
+				C95A597A29992CCB00C4B0AE /* R.generated.swift in Sources */,
+				C95A597C29992D2100C4B0AE /* Spacing.swift in Sources */,
+				C95A598029993B1600C4B0AE /* CalculatorFormatterExtension.swift in Sources */,
+				C95A59712999276300C4B0AE /* CalculatorKeyboardView.swift in Sources */,
+				C95A596C2999276300C4B0AE /* CalculatorBuilder.swift in Sources */,
+				C95A599029993F0800C4B0AE /* UICollectionView.swift in Sources */,
+				C95A597829992A6200C4B0AE /* TextStyles.swift in Sources */,
+				C95A59702999276300C4B0AE /* CalculatorKeyboardCell.swift in Sources */,
+				C95A596E2999276300C4B0AE /* CalculatorPresentationController.swift in Sources */,
+				C95A59722999276300C4B0AE /* CalculatorKeyboardDataSource.swift in Sources */,
+				C95A598629993CAB00C4B0AE /* ValidatorError.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		C95A59382999209800C4B0AE /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C95A597D299939FA00C4B0AE /* ru */,
+				C95A597E29993A0F00C4B0AE /* ru */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C95A593C2999209800C4B0AE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C95A593D2999209800C4B0AE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C95A593F2999209800C4B0AE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 55DAE9E6B24E33BED527E631 /* Pods-Calculator.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = Calculator/Images.xcassets;
+				DEVELOPMENT_TEAM = 733T3VK6AH;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Calculator/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = postnikovpetr.Calculator;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C95A59402999209800C4B0AE /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5BEF9B72849A5FEEE0F38616 /* Pods-Calculator.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = Calculator/Images.xcassets;
+				DEVELOPMENT_TEAM = 733T3VK6AH;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Calculator/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = postnikovpetr.Calculator;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C95A59252999209700C4B0AE /* Build configuration list for PBXProject "Calculator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C95A593C2999209800C4B0AE /* Debug */,
+				C95A593D2999209800C4B0AE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C95A593E2999209800C4B0AE /* Build configuration list for PBXNativeTarget "Calculator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C95A593F2999209800C4B0AE /* Debug */,
+				C95A59402999209800C4B0AE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C95A59222999209700C4B0AE /* Project object */;
+}
